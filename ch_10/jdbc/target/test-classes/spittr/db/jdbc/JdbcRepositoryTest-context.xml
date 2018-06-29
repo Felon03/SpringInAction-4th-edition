@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:jdbc="http://www.springframework.org/schema/jdbc"
+       xmlns:c="http://www.springframework.org/schema/c"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/jdbc http://www.springframework.org/schema/jdbc/spring-jdbc.xsd">
+
+    <!--XML配置Spring JDBC-->
+    <jdbc:embedded-database id="dataSource" type="H2">
+        <jdbc:script location="classpath:spittr/db/jdbc/schema.sql"/>
+        <jdbc:script location="classpath:spittr/db/jdbc/test-data.sql"/>
+    </jdbc:embedded-database>
+
+    <bean id="jdbcTemplate"
+          class="org.springframework.jdbc.core.JdbcTemplate"
+          c:_0-ref="dataSource"/>
+
+    <bean class="spittr.db.jdbc.JdbcSpitterRepository"
+          c:_0-ref="jdbcTemplate"/>
+
+    <bean class="spittr.db.jdbc.JdbcSpittleRepository"
+          c:_0-ref="jdbcTemplate"/>
+
+    <bean id="transactionManager"
+          class="org.springframework.jdbc.datasource.DataSourceTransactionManager"
+          c:_0-ref="dataSource"/>
+</beans>
