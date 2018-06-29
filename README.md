@@ -1,5 +1,5 @@
-# SpringInAction-4th-edition-
-《Spring实战(第四版)》各章代码
+# SpringInAction-4th-edition
+《Spring实战(第四版)》各章节代码
 
 ## 简介
 
@@ -67,15 +67,15 @@
 
 
 
-[1]: \ch_01
-[2]: \ch_02
-[3]: \ch_03
-[4]: \ch_04
-[5]: \ch_05
-[6]: \ch_06
-[7]: \ch_07
-[8]: \ch_08
-[9]: \ch_9
-[10]: \ch_10
-[11]: \ch_11
+[1]: https://github.com/Felon03/SpringInAction-4th-edition/tree/master/ch_01
+[2]: https://github.com/Felon03/SpringInAction-4th-edition/tree/master/ch_02
+[3]: https://github.com/Felon03/SpringInAction-4th-edition/tree/master/ch_03
+[4]: https://github.com/Felon03/SpringInAction-4th-edition/tree/master/ch_04
+[5]: https://github.com/Felon03/SpringInAction-4th-edition/tree/master/ch_05
+[6]: https://github.com/Felon03/SpringInAction-4th-edition/tree/master/ch_06
+[7]: https://github.com/Felon03/SpringInAction-4th-edition/tree/master/ch_07
+[8]: https://github.com/Felon03/SpringInAction-4th-edition/tree/master/ch_08
+[9]: https://github.com/Felon03/SpringInAction-4th-edition/tree/master/ch_09
+[10]: https://github.com/Felon03/SpringInAction-4th-edition/tree/master/ch_10
+[11]: https://github.com/Felon03/SpringInAction-4th-edition/tree/master/ch_11
 
